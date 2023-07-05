@@ -103,9 +103,39 @@ button {
     color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width : 600px) {
+    .card {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .card {
+        height: 680px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-section {
+        background-image: url(images/image-product-mobile.jpg);
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .details {
+        width: 90%;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+}
+
 
 @media screen and (max-width : 375px) {
     .card {
+        width: 100%;
         height: 680px;
         display: flex;
         flex-direction: column;
